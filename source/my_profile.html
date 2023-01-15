@@ -4,26 +4,53 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css\style.min.css">
     <title>Document</title>
 </head>
-<body>
-    <header>
+<body class="container">
+    <header class="header_list header_MP">
+        <a href="index.html" class="header_list__element">Home</a>
         <div>
-            <p>Home</p>
-        </div>
-        <div>
-            <p>My blog</p>
-            <p>My profile</p>
+            <a href="blog.html" class="header_list__element">My blog</a>
+            <a href="#" class="header_list__element_home">My profile</a>
         </div>
     </header>
     <main>
-        <h1>My profile</h1>
-        <div>
+        <h1 class="MP_head">My profile</h1>
+        <div class="MP_section">
             <div>
-
+                <img src="img/Profile image.png" alt="">
             </div>
-            <div>
-
+            <div class="user_data">
+                <div class="user_data__element">
+                    <p class="user_data__element_text">Name:</p>
+                    <p>Oksana</p>
+                </div>
+                <div class="user_data__element">
+                    <p class="user_data__element_text">Surname:</p>
+                    <p>Larioskina</p>
+                </div>
+                <div class="user_data__element">
+                    <p class="user_data__element_text">Email:</p>
+                    <p>larioshkina@gmail.com</p>
+                </div>
+                <div class="user_data__element">
+                    <p class="user_data__element_text">Password:</p>
+                    <p>**********</p>
+                </div>
+                <div class="user_data__element">
+                    <p class="user_data__element_text">Location:</p>
+                    <p>Tolyatti</p>
+                </div>
+                <div class="user_data__element">
+                    <p class="user_data__element_text">Age:</p>
+                    <p>23</p>
+                </div>
+                <div class="MP_button_list">
+                    <button class="MP_button_list__element MP_button_list__element-A">Change password</button>
+                    <button class="MP_button_list__element MP_button_list__element-B">Change other data</button>
+                    <button class="MP_button_list__element MP_button_list__element-C">Delete account</button>
+                </div>
             </div>
         </div>
     </main>

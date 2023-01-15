@@ -7,78 +7,229 @@
   <link rel="stylesheet" href="css\style.min.css">
   <title>Document</title>
 </head>
-<body>
-  @@include('blocks/header.html')
+<body class="body">
+  <header class="container">
+    <ul class="header_list">
+      <li>
+          <a href="#" alt="" class="header_list__element_home">Home</a>
+      </li>
+      <li>
+          <a href="blog.html" alt="" class="header_list__element">My blog</a>
+          <button class="header_list__element sign_in_button">Sign in</button>
+          <button class="header_list__element register_button">Register</button>
+      </li>
+    </ul>
+</header>
   <main class="container">
-    <section>
-      <h1>Antonina Antoninovna</h1>
-      <p>Future front-end developer
-        23 years old, Tolyatti</p>
+
+      <div class="head_flex">
+        <h1 class="head_flex__element-AA">Antonina Antoninovna</h1>
+        <p class="head_flex__element-B">Future front-end developer 23 years old, Tolyatti</p>
+      </div>
         <img src="img/photo.png" alt="">
-        <div>
-          <button><img src="img/vector_2.png" alt=""></button>
+        <div class="swiper">
+          <button class="swiper__button"><img src="img/vector_2.png" alt=""></button>
+          <div>
             <input type="radio"
             value="1"
-            name="slider">
+            name="slider"
+            class="swiper__slider"
+            checked>
             <input type="radio"
             value="2"
-            name="slider">
+            name="slider"
+            class="swiper__slider">
             <input type="radio"
             value="3"
-            name="slider">
+            name="slider"
+            class="swiper__slider">
             <input type="radio"
             value="4"
-            name="slider">
-          <button><img src="img/vector_1.png" alt=""></button>
+            name="slider"
+            class="swiper__slider">
+          </div>
+          <button class="swiper__button"><img src="img/vector_1.png" alt=""></button>
         </div>
+
+    <section class="AM_section">
+      <h3 class="AM_section__head">About me</h3>
+      <div>
+        <p class="AM_section__text-A">Aliquam tortor molestie turpis est tristique. Congue diam orciamet quis semper ut. Vitae aenean nibh facilisis urna, ultricies euismod nunc. Commodo fringilla sit hendrerit consequat. Vel ac elit vel sagittis.<img src="img/message.png" alt="" class="AM_section__message-A"></p>
+      </div>
+      <div>
+        <p class="AM_section__text-B">Tincidunt id quis pellentesque rutrum pretium. Egestas aliquam dictum ipsum nisl, sed pulvinar. Commodo elit sed a fermentum non justo. Etiam platea consectetur.<img src="img/message-B.png" alt="" class="AM_section__message-B"></p>
+      </div>
+      <div>
+        <p class="AM_section__text-C">Quam ipsum odio tellus etiam aliquam dolor ut hendrerit. Felis risus nec vitae nunc ultricies placerat. Nullam nec felis eu id dolor pellentesque tristique.<img src="img/message-C.png" alt="" class="AM_section__message-C"> </p>      
+      </div>
     </section>
 
-    <section>
-      <h3>About me</h3>
-      <p>Aliquam tortor molestie turpis est tristique. Congue diam orci amet quis semper ut. Vitae aenean nibh facilisis urna, ultricies euismod nunc. Commodo fringilla sit hendrerit consequat. Vel ac elit vel sagittis.</p>
-      <p>Tincidunt id quis pellentesque rutrum pretium. Egestas aliquam dictum ipsum nisl, sed pulvinar. Commodo elit sed a fermentum non justo. Etiam platea consectetur.</p>
-      <p>Quam ipsum odio tellus etiam aliquam dolor ut hendrerit. Felis risus nec vitae nunc ultricies placerat. Nullam nec felis eu id dolor pellentesque tristique. </p>      
-    </section>
-
-    <section>
-      <h3>Skills</h3>
-      <p>I work in such programs as</p>
-      <ul>
+    <section class="skills_section">
+      <h3 class="skills_section__head">Skills</h3>
+      <p class="skills_section__text_A">I work in such programs as</p>
+      <ul class="skills_section__flex">
         <li>
           <img src="img/html5.png" alt="">
-          <p>HTML 5</p>          
+          <p>HTML 5</p>
+          <div class="skills_section__indicator">
+            <p>55%</p>
+            <img src="img/indicator.png" alt="" class="skills_section__indicator-img">
+          </div>   
         </li>
         <li>
           <img src="img/css scss.png" alt="">
-          <p>CSS/SCSS</p>          
+          <p>CSS/SCSS</p>     
+          <div class="skills_section__indicator">
+            <p>55%</p>
+            <img src="img/indicator.png" alt="" class="skills_section__indicator-img">
+          </div>     
         </li>
         <li>
           <img src="img/javascript.png" alt="">
           <p>JavaScript</p>          
+          <div class="skills_section__indicator">
+            <p>55%</p>
+            <img src="img/indicator.png" alt="" class="skills_section__indicator-img">
+          </div>   
         </li>
         <li>
           <img src="img/github.png" alt="">
           <p>Git/GitHub</p>          
+          <div class="skills_section__indicator">
+            <p>55%</p>
+            <img src="img/indicator.png" alt="" class="skills_section__indicator-img">
+          </div>   
         </li>
         <li>
           <img src="img/figma.png" alt="">
-          <p>Figma</p>          
+          <p>Figma</p>
+          <div class="skills_section__indicator">
+            <p>55%</p>
+            <img src="img/indicator.png" alt="" class="skills_section__indicator-img">
+          </div>   
         </li>
       </ul>
     </section>
 
-    <section>
-      <h3>Portfolio</h3>
-      <img src="img/Vector learning site left.png" alt="">
-      <img src="img/Learning site.png" alt="">
-      <h3>Learning site for DL Academy courses</h3>
-      <p>A simple multi-page static site. The design layout was in Figma. HTML and CSS were used. The site is responsive and cross-browser, but without adding interactivity via JavaScript.</p>
-      <img src="img/Vector learning site right.png" alt="">
+    <section class="partfolio">
+      <h3 class="partfolio__head">Portfolio</h3>
+      <div class="partfolio__swiper">
+        <button class="partfolio__swiper-button partfolio__swiper-button-one"><img src="img/Vector learning site left.png" alt=""></button>
+        <img src="img/Learning site.png" alt="">
+        <button class="partfolio__swiper-button partfolio__swiper-button-two"><img src="img/Vector learning site right.png" alt=""></button>
+      </div>
+      <div class="partfolio__description">
+        <h3 class="partfolio__description-head">Learning site for DL Academy courses</h3>
+        <p class="partfolio__description-text">A simple multi-page static site. The design layout was in Figma. HTML and CSS were used. The site is responsive and cross-browser, but without adding interactivity via JavaScript.</p>  
+      </div>
     </section>
   </main>
   @@include('blocks/footer.html')
+  <div class="form_flex_RR">
+    <form action="">
+        <div class="form_border">
+            <div class="main">
+                <p class="main__text">Email *</p>
+                <input type="email" class="main__input">
+            </div>
+            <div class="input_flex">
+                <div class="input_flex__element input_flex__left">
+                    <p class="input_flex__element_text">Name *</p>
+                    <input type="text" class="input_flex__element_input">
+                </div>
+                <div class="input_flex__element">
+                    <p class="input_flex__element_text">Surname *</p>
+                    <input type="text" class="input_flex__element_input">
+                </div>
+            </div>
+            <div class="input_flex">
+                <div class="input_flex__element input_flex__left">
+                    <p class="input_flex__element_text">Password *</p>
+                    <input type="password" class="input_flex__element_input">
+                </div>
+                <div class="input_flex__element">
+                    <p class="input_flex__element_text">Repeat password *</p>
+                    <input type="password" class="input_flex__element_input">
+                </div>
+            </div>
+            <div class="input_flex">
+                <div class="input_flex__element input_flex__left">
+                    <p class="input_flex__element_text">Location *</p>
+                    <input type="text" class="input_flex__element_input">
+                </div>
+                <div class="input_flex__element">
+                    <p class="input_flex__element_text">Age *</p>
+                    <input type="text" class="input_flex__element_input">
+                </div>
+            </div>
+            <div class="checkbox_section">
+                <input type="checkbox" name="checkbox" class="checkbox_section__input checkbox_active" id="checkbox">
+                <button class="form_button_RR" disabled>Sign up</button>
+                <label for="checkbox" class="checkbox_section__label">
+                    <span class="checkbox_section__text">Clicking on the button, you consent to the processing of your personal data.</span>
+                </label>
+            </div>
+        </div>
+        <div>
+            <div class="form_flex_SI">
+              <form action="" class="form_border">
+                  <div class="email">
+                      <p class="email__text">Email *</p>
+                        <div class="form_close_div">
+                            <input type="email" class="email__input">
+                        </div>
+                    </div>
+                    <div class="password">
+                        <p class="password__text">Password *</p>
+                        <input type="password" class="password__input">
+                    </div>
+                    <button class="form_button">Log in</button>
+                    <button class="form_close"><img src="img/cross.png" alt=""></button>
+                </form>
+            </div>
+          </form>
+          <button class="form_close"><img src="img/cross.png" alt=""></button>
+        </div>
+        <div class="form_flex_SM">
+          <form action="" class="form_border">
+              <div class="input_flex_SM">
+                  <div class="input_flex__left">
+                      <p class="input_flex__element_text">What is your name? *</p>
+                      <input type="text" class="input_flex__element_input">
+                  </div>
+                  <div>
+                      <p class="input_flex__element_text">Message subject *</p>
+                      <input type="text" class="input_flex__element_input">
+                  </div>
+              </div>
+              <div class="input_flex_SM">
+                  <div class="input_flex__left">
+                      <p class="input_flex__element_text">Your Email *</p>
+                      <input type="email" class="input_flex__element_input">
+                  </div>
+                  <div>
+                      <p class="input_flex__element_text">Your mobile phone *</p>
+                      <input type="tel" class="input_flex__element_input">
+                  </div>
+              </div>
+              <div class="main_SM">
+                  <p class="main_SM__text">What do you want to discuss with me?</p>
+                  <textarea class="main_SM__input"></textarea>
+              </div>
+              <div class="checkbox_section">
+                  <input type="checkbox" name="checkbox" class="checkbox_section__input checkbox_active" id="checkbox">
+                  <button class="form_button_RR" disabled>Send</button>
+                  <label for="checkbox" class="checkbox_section__label">
+                      <span class="checkbox_section__text">Clicking on the button, you consent to the processing of your personal data.</span>
+                  </label>
+              </div>
+          </form>
+          <img src="img/cross.png" alt="" class="form_close"> 
+      </div>
+</div>
 </body>
 
+<script src="js/index.js"></script>
 <script src="js/app.js"></script>
 
 </html>

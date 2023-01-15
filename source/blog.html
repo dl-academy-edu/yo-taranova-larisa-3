@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css\style.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header_list header_MP">
+        <a href="index.html" class="header_list__element">Home</a>
+        <div>
+            <a href="blog.html" class="header_list__element">My blog</a>
+            <a href="#" class="header_list__element">My profile</a>
+        </div>
+    </header>
+    <main class="container">
+        <h1>My blog</h1>
+        <div>
+            <div>
+                <p>Tags</p>
+                <div>
+                    <input type="checkbox"
+                    name="blue">
+                    <input type="checkbox"
+                    name="lite_blue">
+                    <input type="checkbox"
+                    name="yellow">
+                    <input type="checkbox"
+                    name="Turquoise">
+                    <input type="checkbox"
+                    name="orange">
+                    <input type="checkbox"
+                    name="pink">
+                    <input type="checkbox"
+                    name="lilac">
+                    <input type="checkbox"
+                    name="green">
+                </div>
+            </div>
+            <div>
+                <p>Views</p>
+                <div>
+                    <input type="radio"
+                    name="views">
+                    <input type="radio"
+                    name="views">
+                    <input type="radio"
+                    name="views">
+                </div>
+            </div>
+            <div>
+                <p>Comments</p>
+                <div>
+                    <input type="checkbox"
+                    name="0">
+                    <input type="checkbox"
+                    name="0-1">
+                    <input type="checkbox"
+                    name="1-50">
+                </div>
+            </div>
+            <div>
+                <p>How show?</p>
+                <div>
+                    <input type="radio"
+                    name="How_show">
+                    <input type="radio"
+                    name="How_show">
+                </div>
+            </div>
+            <div>
+                <p>Sort by</p>
+                <div>
+                    <input type="radio"
+                    name="Sort_by">
+                    <input type="radio"
+                    name="Sort_by">                    
+                    <input type="radio"
+                    name="Sort_by">
+                </div>
+            </div>
+            <div>
+                <p>reset form</p>
+                <button>Reset</button>
+            </div>
+            <div>
+                <input type="text">
+                <button>Search</button>
+            </div>
+        </div>
+    </main>
+    @@include('blocks/footer.html')
+</body>
+</html>
