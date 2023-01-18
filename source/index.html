@@ -26,30 +26,32 @@
         <h1 class="head_flex__element-AA">Antonina Antoninovna</h1>
         <p class="head_flex__element-B">Future front-end developer 23 years old, Tolyatti</p>
       </div>
-        <img src="img/photo.png" alt="">
-        <div class="swiper">
-          <button class="swiper__button"><img src="img/vector_2.png" alt=""></button>
-          <div>
-            <input type="radio"
-            value="1"
-            name="slider"
-            class="swiper__slider"
-            checked>
-            <input type="radio"
-            value="2"
-            name="slider"
-            class="swiper__slider">
-            <input type="radio"
-            value="3"
-            name="slider"
-            class="swiper__slider">
-            <input type="radio"
-            value="4"
-            name="slider"
-            class="swiper__slider">
+      <div class="slider-container">
+        <div class="slider">
+          <div class="slider__wrapper">
+            <div class="slider__inner_wrapper">
+              <div class="slider__slide">
+                <img src="img/photo.png" alt="">
+              </div>
+              <div class="slider__slide">
+                <img src="img/photo.png" alt="">
+              </div>
+              <div class="slider__slide">
+                <img src="img/photo.png" alt="">
+              </div>
+              <div class="slider__slide">
+                <img src="img/photo.png" alt="">
+              </div>
+            </div>
           </div>
-          <button class="swiper__button"><img src="img/vector_1.png" alt=""></button>
+          <div class="slider__bottom-panel">
+            <button class="slider__button slider__button_back slider__button_back_js"><img src="img/Vector_2.svg" alt=""></button>
+            <div class="slider__pagination"></div>
+            <button class="slider__button slider__button_next slider__button_next_js"><img src="img/Vector_1.svg" alt=""></button>
+          </div>
         </div>
+      </div>
+      <script src="js/slider.js"></script>
 
     <section class="AM_section">
       <h3 class="AM_section__head">About me</h3>
@@ -164,12 +166,14 @@
             </div>
             <div class="checkbox_section">
                 <input type="checkbox" name="checkbox" class="checkbox_section__input checkbox_active" id="checkbox">
-                <button class="form_button_RR" disabled>Sign up</button>
+                <button class="form_button_RR">Sign up</button>
                 <label for="checkbox" class="checkbox_section__label">
                     <span class="checkbox_section__text">Clicking on the button, you consent to the processing of your personal data.</span>
                 </label>
             </div>
         </div>
+        <button class="form_close_RR"><img src="img/cross.png" alt=""></button>
+  </div>
         <div>
             <div class="form_flex_SI">
               <form action="" class="form_border">
@@ -188,45 +192,7 @@
                 </form>
             </div>
           </form>
-          <button class="form_close"><img src="img/cross.png" alt=""></button>
         </div>
-        <div class="form_flex_SM">
-          <form action="" class="form_border">
-              <div class="input_flex_SM">
-                  <div class="input_flex__left">
-                      <p class="input_flex__element_text">What is your name? *</p>
-                      <input type="text" class="input_flex__element_input">
-                  </div>
-                  <div>
-                      <p class="input_flex__element_text">Message subject *</p>
-                      <input type="text" class="input_flex__element_input">
-                  </div>
-              </div>
-              <div class="input_flex_SM">
-                  <div class="input_flex__left">
-                      <p class="input_flex__element_text">Your Email *</p>
-                      <input type="email" class="input_flex__element_input">
-                  </div>
-                  <div>
-                      <p class="input_flex__element_text">Your mobile phone *</p>
-                      <input type="tel" class="input_flex__element_input">
-                  </div>
-              </div>
-              <div class="main_SM">
-                  <p class="main_SM__text">What do you want to discuss with me?</p>
-                  <textarea class="main_SM__input"></textarea>
-              </div>
-              <div class="checkbox_section">
-                  <input type="checkbox" name="checkbox" class="checkbox_section__input checkbox_active" id="checkbox">
-                  <button class="form_button_RR" disabled>Send</button>
-                  <label for="checkbox" class="checkbox_section__label">
-                      <span class="checkbox_section__text">Clicking on the button, you consent to the processing of your personal data.</span>
-                  </label>
-              </div>
-          </form>
-          <img src="img/cross.png" alt="" class="form_close"> 
-      </div>
-</div>
 </body>
 
 <script src="js/index.js"></script>

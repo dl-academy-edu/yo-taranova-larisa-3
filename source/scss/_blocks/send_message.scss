@@ -1,9 +1,14 @@
 .form_flex_SM {
     position: fixed;
-    margin-top: 220px;
-    display: flex;
+    top: 220px;
+    display: none;
     justify-content: center;
     margin-left: 30%;
+    z-index: 2;
+}
+
+.form_flex_SM_active {
+    display: flex;
 }
 
 .input_flex_SM {
@@ -60,6 +65,14 @@
     &__label {
         cursor: pointer;
     }
+}
+
+.form_close_SM {
+    position: relative;
+    cursor: pointer;
+    background-color: transparent;
+    border: black;
+    max-height: 26px;
 }
 
 .form_button_SM {

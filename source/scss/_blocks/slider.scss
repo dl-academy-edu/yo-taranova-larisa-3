@@ -1,0 +1,33 @@
+.slider-container {
+    max-width: 1000px;
+  }
+  
+.slider {
+  &__wrapper {
+    height: 465px;
+  }
+  
+  &__inner-wrapper {
+    display: flex;
+    height: 100%;
+  }
+
+  &__slide {
+    display: flex;
+    font-size: 24px;
+    }
+  
+  &__button {
+    margin-top: 30px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  
+  &__bottom-panel {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
