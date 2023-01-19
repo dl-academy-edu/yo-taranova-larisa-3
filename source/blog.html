@@ -8,7 +8,7 @@
     <title>Document</title>
 </head>
 <body class="body">
-    <header class="header_list header_MP">
+    <header class="header_list header_MP header_blog">
         <a href="index.html" class="header_list__element">Home</a>
         <div>
             <a href="#" class="header_list__element">My blog</a>
@@ -16,80 +16,115 @@
         </div>
     </header>
     <main class="container">
-        <h1>My blog</h1>
-        <div>
-            <div>
-                <p>Tags</p>
+        <h1 class="checkbox_section">My blog</h1>
+        <form action="">
+            <div class="form_section">
+                <div class="checkbox_section">
+                    <p class="checkbox_section__text">Tags</p>
+                    <div class="checkbox_section__flex">
+                        <input type="checkbox"
+                        name="blue">
+                        <input type="checkbox"
+                        name="lite_blue">
+                        <input type="checkbox"
+                        name="yellow">
+                        <input type="checkbox"
+                        name="Turquoise">
+                        <input type="checkbox"
+                        name="orange">
+                        <input type="checkbox"
+                        name="pink">
+                        <input type="checkbox"
+                        name="lilac">
+                        <input type="checkbox"
+                        name="green">
+                    </div>
+                </div>
+                <div class="views_section">
+                    <p class="views_section__text">Views</p>
+                    <div class="views_section__flex">
+                        <div class="views_section__flex_element">
+                            <input type="radio"
+                            name="views">
+                            <p class="text_left">100-500</p>
+                        </div>
+                        <div class="views_section__flex_element">
+                            <input type="radio"
+                            name="views">
+                            <p class="text_left">500-1000</p>
+                        </div>
+                        <div class="views_section__flex_element">
+                            <input type="radio"
+                            name="views">
+                            <p class="text_left">1000-2000</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="comments_section">
+                    <p class="comments_section__text">Comments</p>
+                    <div class="comments_section__flex">
+                        <div class="comments_section__flex_element">
+                            <input type="checkbox"
+                            name="0">
+                            <p class="text_left">0</p>
+                        </div>
+                        <div class="comments_section__flex_element">
+                            <input type="checkbox"
+                            name="0-1">
+                            <p class="text_left">0-1</p>
+                        </div>
+                        <div class="comments_section__flex_element">
+                            <input type="checkbox"
+                            name="1-50">
+                            <p class="text_left">1-50</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="HS_section">
+                    <p class="HS_section__text">How show?</p>
+                    <div class="HS_section__flex">
+                        <div class="HS_section__flex_element">
+                            <input type="radio"
+                            name="How_show">
+                            <p class="text_left">show 5</p>
+                        </div>
+                        <div class="HS_section__flex_element">
+                            <input type="radio"
+                            name="How_show">
+                            <p class="text_left">show 10</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="SR_section">
+                    <p class="SR_section__text">Sort by</p>
+                    <div class="SR_section__flex">
+                        <div class="SR_section__flex_element">
+                            <input type="radio"
+                            name="Sort_by">
+                            <p class="text_left">date</p>
+                        </div>
+                        <div class="SR_section__flex_element">
+                            <input type="radio"
+                            name="Sort_by">
+                            <p class="text_left">title</p>
+                        </div>
+                        <div class="SR_section__flex_element">
+                            <input type="radio"
+                            name="Sort_by">
+                            <p class="text_left">views</p>
+                        </div>
+                    </div>
+                </div>
                 <div>
-                    <input type="checkbox"
-                    name="blue">
-                    <input type="checkbox"
-                    name="lite_blue">
-                    <input type="checkbox"
-                    name="yellow">
-                    <input type="checkbox"
-                    name="Turquoise">
-                    <input type="checkbox"
-                    name="orange">
-                    <input type="checkbox"
-                    name="pink">
-                    <input type="checkbox"
-                    name="lilac">
-                    <input type="checkbox"
-                    name="green">
+                    <p class="main_form_button_text">reset form</p>
+                    <button class="main_form_button">Reset</button>
                 </div>
             </div>
-            <div>
-                <p>Views</p>
-                <div>
-                    <input type="radio"
-                    name="views">
-                    <input type="radio"
-                    name="views">
-                    <input type="radio"
-                    name="views">
-                </div>
+            <div class="search_section">
+                <input type="text" class="search_section__input">
+                <button class="search_section__button">Search</button>
             </div>
-            <div>
-                <p>Comments</p>
-                <div>
-                    <input type="checkbox"
-                    name="0">
-                    <input type="checkbox"
-                    name="0-1">
-                    <input type="checkbox"
-                    name="1-50">
-                </div>
-            </div>
-            <div>
-                <p>How show?</p>
-                <div>
-                    <input type="radio"
-                    name="How_show">
-                    <input type="radio"
-                    name="How_show">
-                </div>
-            </div>
-            <div>
-                <p>Sort by</p>
-                <div>
-                    <input type="radio"
-                    name="Sort_by">
-                    <input type="radio"
-                    name="Sort_by">                    
-                    <input type="radio"
-                    name="Sort_by">
-                </div>
-            </div>
-            <div>
-                <p>reset form</p>
-                <button>Reset</button>
-            </div>
-            <div>
-                <input type="text">
-                <button>Search</button>
-            </div>
-        </div>
+        </form>
     </main>
     @@include('blocks/footer.html')
 </body>

@@ -33,8 +33,6 @@ let signInModalButtonClose = document.querySelector('.form_close')
 
 let signInHeaderLink = document.querySelector('.sign_in_button')
 
-
-
 signInHeaderLink.addEventListener('click', function() {
     signInModal.classList.add('form_flex_SI_active')
 })
@@ -50,3 +48,21 @@ signInModalButtonClose.addEventListener('click', function() {
 signInModalButtonClose.addEventListener('click', function() {
     signInModal.classList.toggle('form_flex_SI_active')
 })
+
+// const swiper = new Swiper('.swiper', {
+//     direction: 'vertical',
+//     loop: true,
+  
+//     pagination: {
+//       el: '.swiper-pagination',
+//     },
+  
+//     navigation: {
+//       nextEl: '.swiper-button-next',
+//       prevEl: '.swiper-button-prev',
+//     },
+
+//     scrollbar: {
+//       el: '.swiper-scrollbar',
+//     },
+//   });

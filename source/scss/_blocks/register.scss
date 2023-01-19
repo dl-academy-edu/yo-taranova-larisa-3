@@ -15,6 +15,10 @@
 .input_flex {
     display: flex;
 
+    @media screen and (max-width: 729px) {
+        flex-direction: column;
+    }
+
     &__element_text {
         font-size: 14px;
         margin-bottom: 0;
@@ -31,6 +35,13 @@
         margin-left: 40px;
         margin-right: 20px;
     }
+
+    &__right {
+        @media screen and (max-width: 729px) {
+            margin-left: 40px;
+            margin-right: 20px;
+        }
+    }
 }
 
 .main {
@@ -42,6 +53,12 @@
         width: 600px;
         border-radius: 0px;
         border: 2px solid #E5E5E5;
+
+        @media screen and (max-width: 729px) {
+            height: 50px;
+            width: 290px;
+            border: 2px solid #E5E5E5;
+        }
     }
 
     &__text {
@@ -58,6 +75,7 @@
     margin-bottom: 102px;
     display: flex;
     position: relative;
+    flex-direction: row;
 
     &__text {
         margin-left: 15px;

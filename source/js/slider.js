@@ -13,9 +13,7 @@ const buttonNext = document.querySelector('.slider__button_next_js');
 const slides = [...document.querySelectorAll('.slider__slide')];
 const slidesCount = slides.length;
 
-console.log(slides)
-
-let slidesWidth = wrapper.offset;
+let slidesWidth = wrapper.offsetWidth;
 
 
 
@@ -23,21 +21,18 @@ slides.forEach(slide => {
     slide.style.width = `${slidesWidth}px`;
 })
 
-console.log(slides)
-
 function setActiveSlide(index) {
-    if ( index < 0 || index >= slidesCount ) 
-    return;
-    innerWrapper.style.transform = `translateX(${index * slidesWidth * (-1)}px)`
+    if ( index < 0 || index >= slidesCount ) return;
+    innerWrapper.style.transform = `translateX(${index * slidesWidth * (-1)}px)`;
 
     activeSlideIndex = index;
 }
 
-buttonNext.addEventListener('click,', () => {
+buttonNext.addEventListener('click', () => {
     setActiveSlide(activeSlideIndex + 1);
 })
 
-buttonBack.addEventListener('click,', () => {
+buttonBack.addEventListener('click', () => {
     setActiveSlide(activeSlideIndex - 1);
 })
 
