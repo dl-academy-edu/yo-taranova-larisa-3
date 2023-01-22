@@ -17,27 +17,12 @@
     </header>
     <main class="container">
         <h1 class="checkbox_section">My blog</h1>
-        <form action="">
-            <div class="form_section">
+        <form name="filter">
+            <div class="form_section mt-3">
                 <div class="checkbox_section">
                     <p class="checkbox_section__text">Tags</p>
-                    <div class="checkbox_section__flex">
-                        <input type="checkbox"
-                        name="blue">
-                        <input type="checkbox"
-                        name="lite_blue">
-                        <input type="checkbox"
-                        name="yellow">
-                        <input type="checkbox"
-                        name="Turquoise">
-                        <input type="checkbox"
-                        name="orange">
-                        <input type="checkbox"
-                        name="pink">
-                        <input type="checkbox"
-                        name="lilac">
-                        <input type="checkbox"
-                        name="green">
+                    <div class="select_of_box_js">
+        
                     </div>
                 </div>
                 <div class="views_section">
@@ -45,17 +30,17 @@
                     <div class="views_section__flex">
                         <div class="views_section__flex_element">
                             <input type="radio"
-                            name="views">
+                            name="views" value="views">
                             <p class="text_left">100-500</p>
                         </div>
                         <div class="views_section__flex_element">
                             <input type="radio"
-                            name="views">
+                            name="views" value="views">
                             <p class="text_left">500-1000</p>
                         </div>
                         <div class="views_section__flex_element">
                             <input type="radio"
-                            name="views">
+                            name="views" value="views">
                             <p class="text_left">1000-2000</p>
                         </div>
                     </div>
@@ -65,17 +50,17 @@
                     <div class="comments_section__flex">
                         <div class="comments_section__flex_element">
                             <input type="checkbox"
-                            name="0">
+                            name="0" value="comments">
                             <p class="text_left">0</p>
                         </div>
                         <div class="comments_section__flex_element">
                             <input type="checkbox"
-                            name="0-1">
+                            name="0-1" value="comments">
                             <p class="text_left">0-1</p>
                         </div>
                         <div class="comments_section__flex_element">
                             <input type="checkbox"
-                            name="1-50">
+                            name="1-50" value="comments">
                             <p class="text_left">1-50</p>
                         </div>
                     </div>
@@ -85,12 +70,12 @@
                     <div class="HS_section__flex">
                         <div class="HS_section__flex_element">
                             <input type="radio"
-                            name="How_show">
+                            name="How_show" value="how_show">
                             <p class="text_left">show 5</p>
                         </div>
                         <div class="HS_section__flex_element">
                             <input type="radio"
-                            name="How_show">
+                            name="How_show" value="how_show">
                             <p class="text_left">show 10</p>
                         </div>
                     </div>
@@ -100,32 +85,36 @@
                     <div class="SR_section__flex">
                         <div class="SR_section__flex_element">
                             <input type="radio"
-                            name="Sort_by">
+                            name="Sort_by" value="date">
                             <p class="text_left">date</p>
                         </div>
                         <div class="SR_section__flex_element">
                             <input type="radio"
-                            name="Sort_by">
+                            name="Sort_by" value="title">
                             <p class="text_left">title</p>
                         </div>
                         <div class="SR_section__flex_element">
                             <input type="radio"
-                            name="Sort_by">
+                            name="Sort_by" value="views">
                             <p class="text_left">views</p>
                         </div>
                     </div>
                 </div>
                 <div>
                     <p class="main_form_button_text">reset form</p>
-                    <button class="main_form_button">Reset</button>
+                    <button class="main_form_button" type="button">Reset</button>
                 </div>
             </div>
             <div class="search_section">
                 <input type="text" class="search_section__input">
-                <button class="search_section__button">Search</button>
+                <button class="search_section__button" type="submit">Search</button>
+            </div>
+            <div class="result_js">
+
             </div>
         </form>
     </main>
     @@include('blocks/footer.html')
+    <script src="js/blog.js"></script>
 </body>
 </html>

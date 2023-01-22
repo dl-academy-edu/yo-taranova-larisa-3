@@ -51,6 +51,14 @@
 
     &__mail {
         margin-left: 25px;
+
+        @media screen and (max-width: 500px) {
+            margin-left: 10px;
+        }
+    }
+
+    @media screen and (max-width: 500px) {
+        max-width: 220px;
     }
 }
 

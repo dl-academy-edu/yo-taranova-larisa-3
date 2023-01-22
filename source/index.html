@@ -34,7 +34,8 @@
                 <img src="img/css scss.png" alt="">
               </div>
               <div class="slider__slide">
-                <img src="img/photo.png" alt="">
+                <img src="img/photo.png" alt="" class="slider__img">
+                <img src="img/photo-mobile.png" alt="" class="slider__img-mobile">
               </div>
               <div class="slider__slide">
                 <img src="img/javascript.png" alt="">
@@ -76,6 +77,7 @@
           <div class="skills_section__indicator">
             <p>55%</p>
             <img src="img/indicator.png" alt="" class="skills_section__indicator-img">
+            <img src="img/indicator-mobile.png" alt="" class="skills_section__indicator-mobile">
           </div>   
         </li>
         <li>
@@ -84,6 +86,7 @@
           <div class="skills_section__indicator">
             <p>55%</p>
             <img src="img/indicator.png" alt="" class="skills_section__indicator-img">
+            <img src="img/indicator-mobile.png" alt="" class="skills_section__indicator-mobile">
           </div>     
         </li>
         <li>
@@ -92,6 +95,7 @@
           <div class="skills_section__indicator">
             <p>55%</p>
             <img src="img/indicator.png" alt="" class="skills_section__indicator-img">
+            <img src="img/indicator-mobile.png" alt="" class="skills_section__indicator-mobile">
           </div>   
         </li>
         <li>
@@ -100,6 +104,7 @@
           <div class="skills_section__indicator">
             <p>55%</p>
             <img src="img/indicator.png" alt="" class="skills_section__indicator-img">
+            <img src="img/indicator-mobile.png" alt="" class="skills_section__indicator-mobile">
           </div>   
         </li>
         <li>
@@ -108,6 +113,7 @@
           <div class="skills_section__indicator">
             <p>55%</p>
             <img src="img/indicator.png" alt="" class="skills_section__indicator-img">
+            <img src="img/indicator-mobile.png" alt="" class="skills_section__indicator-mobile">
           </div>   
         </li>
       </ul>
@@ -115,78 +121,75 @@
 
     <section class="partfolio">
       <h3 class="partfolio__head">Portfolio</h3>
-      <!-- <div class="swiper">
+      <div class="swiper">
         <div class="swiper-wrapper">
           <div class="swiper-slide"><img src="img/Learning site.png" alt=""></div>
+          <div class="swiper-slide"><img src="img/Learning site.png" alt=""></div>
         </div>
-        <div class="swiper-wrapper">
-          <div class="swiper-slide"><img src="img/figma.png" alt=""></div>
+        <div class="swiper-button-section">
+          <div class="swiper-button-prev">
+            <button class="swiper-button">
+              <img src="img/Vector learning site left.png" alt="">
+            </button>
+          </div>
+          <div class="swiper-button-next">
+            <button class="swiper-button">
+              <img src="img/Vector learning site right.png" alt="">
+            </button>
+          </div>
         </div>
-        <div class="swiper-button-prev">
-          <button>
-            <img src="img/Vector learning site left.png" alt="">
-          </button>
-        </div>
-        <div class="swiper-button-next">
-          <button>
-            <img src="img/Vector learning site right.png" alt="">
-          </button>
-        </div>
-      </div> -->
-      <div class="partfolio__description">
-        <h3 class="partfolio__description-head">Learning site for DL Academy courses</h3>
-        <p class="partfolio__description-text">A simple multi-page static site. The design layout was in Figma. HTML and CSS were used. The site is responsive and cross-browser, but without adding interactivity via JavaScript.</p>  
       </div>
     </section>
   </main>
   @@include('blocks/footer.html')
   <div class="form_flex_RR">
-    <form action="">
-        <div class="form_border">
-            <div class="main">
-                <p class="main__text">Email *</p>
-                <input type="email" class="main__input">
-            </div>
-            <div class="input_flex">
-                <div class="input_flex__element input_flex__left">
-                    <p class="input_flex__element_text">Name *</p>
-                    <input type="text" class="input_flex__element_input">
-                </div>
-                <div class="input_flex__element">
-                    <p class="input_flex__element_text">Surname *</p>
-                    <input type="text" class="input_flex__element_input">
-                </div>
-            </div>
-            <div class="input_flex">
-                <div class="input_flex__element input_flex__left">
-                    <p class="input_flex__element_text">Password *</p>
-                    <input type="password" class="input_flex__element_input">
-                </div>
-                <div class="input_flex__element">
-                    <p class="input_flex__element_text">Repeat password *</p>
-                    <input type="password" class="input_flex__element_input">
-                </div>
-            </div>
-            <div class="input_flex">
-                <div class="input_flex__element input_flex__left">
-                    <p class="input_flex__element_text">Location *</p>
-                    <input type="text" class="input_flex__element_input">
-                </div>
-                <div class="input_flex__element">
-                    <p class="input_flex__element_text">Age *</p>
-                    <input type="text" class="input_flex__element_input">
-                </div>
-            </div>
-            <div class="checkbox_section">
-                <input type="checkbox" name="checkbox" class="checkbox_section__input checkbox_active" id="checkbox">
-                <button class="form_button_RR">Sign up</button>
-                <label for="checkbox" class="checkbox_section__label">
-                    <span class="checkbox_section__text">Clicking on the button, you consent to the processing of your personal data.</span>
-                </label>
-            </div>
-        </div>
-        <button class="form_close_RR"><img src="img/cross.png" alt=""></button>
+    <form action="" name="registerForm">
+      <div class="form_border">
+          <div class="main">
+              <p class="main__text">Email *</p>
+              <input type="email" class="main__input">
+          </div>
+          <div class="input_flex">
+              <div class="input_flex__element input_flex__left">
+                  <p class="input_flex__element_text">Name *</p>
+                  <input type="text" class="input_flex__element_input">
+              </div>
+              <div class="input_flex__element">
+                  <p class="input_flex__element_text">Surname *</p>
+                  <input type="text" class="input_flex__element_input">
+              </div>
+          </div>
+          <div class="input_flex">
+              <div class="input_flex__element input_flex__left">
+                  <p class="input_flex__element_text">Password *</p>
+                  <input type="password" class="input_flex__element_input">
+              </div>
+              <div class="input_flex__element">
+                  <p class="input_flex__element_text">Repeat password *</p>
+                  <input type="password" class="input_flex__element_input">
+              </div>
+          </div>
+          <div class="input_flex">
+              <div class="input_flex__element input_flex__left">
+                  <p class="input_flex__element_text">Location *</p>
+                  <input type="text" class="input_flex__element_input">
+              </div>
+              <div class="input_flex__element">
+                  <p class="input_flex__element_text">Age *</p>
+                  <input type="text" class="input_flex__element_input">
+              </div>
+          </div>
+          <div class="checkbox_section">
+              <input type="checkbox" name="checkbox" class="checkbox_section__input checkbox_active" id="checkbox">
+              <button class="form_button_RR">Sign up</button>
+              <label for="checkbox" class="checkbox_section__label">
+                  <span class="checkbox_section__text">Clicking on the button, you consent to the processing of your personal data.</span>
+              </label>
+          </div>
+      </div>
+      <button class="form_close_RR"><img src="img/cross.png" alt=""></button>
   </div>
+  <script src="js/register.js"></script>
         <div>
             <div class="form_flex_SI">
               <form action="" class="form_border">

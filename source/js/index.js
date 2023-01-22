@@ -49,20 +49,12 @@ signInModalButtonClose.addEventListener('click', function() {
     signInModal.classList.toggle('form_flex_SI_active')
 })
 
-// const swiper = new Swiper('.swiper', {
-//     direction: 'vertical',
-//     loop: true,
+const swiper = new Swiper('.swiper', {
+    direction: 'vertical',
+    loop: true,
   
-//     pagination: {
-//       el: '.swiper-pagination',
-//     },
-  
-//     navigation: {
-//       nextEl: '.swiper-button-next',
-//       prevEl: '.swiper-button-prev',
-//     },
-
-//     scrollbar: {
-//       el: '.swiper-scrollbar',
-//     },
-//   });
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
