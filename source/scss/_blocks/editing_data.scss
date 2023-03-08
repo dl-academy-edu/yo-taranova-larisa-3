@@ -1,0 +1,68 @@
+.form_flex_EDA {
+    display: none;
+    position: fixed;
+    left: 35%;
+    justify-content: center;
+
+    @media screen and (max-width: 1300px) {
+       left: 10%;
+    }
+
+    @media screen and (max-width: 800px) {
+        left: 5%;
+    }
+
+    @media screen and (max-width: 750px) {
+        left: 2%;
+    }
+
+    @media screen and (max-width: 729px) {
+        width: 100%;
+        left: 0;
+        flex-direction: column-reverse;
+    }
+}
+
+.form_flex_EDA_active {
+    top: 150px;
+    display: flex;
+    z-index: 2;
+
+    @media screen and (max-width: 729px) {
+        top: 0;
+    }
+}
+
+.form_border_EDA {
+    max-width: 680px;
+    background-color: white;
+    border: 2px solid black;
+
+    @media screen and (max-width: 729px) {
+        max-width: none;
+        width: 100%;
+        border: none;
+    }
+}
+
+.input_flex_EDA {
+    margin-left: 40px;
+    margin-bottom: 15px;
+
+    &__element_input {
+        max-width: 290px;
+        padding: 15px 15px 15px 14px;
+        border-radius: 0px;
+        border: 2px solid #E5E5E5;
+    }
+}
+
+.form_close_EDA {
+    position: relative;
+    left: 10px;
+    cursor: pointer;
+    background-color: transparent;
+    border: black;
+    max-height: 26px;
+    max-width: 26px;
+}

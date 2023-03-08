@@ -1,0 +1,568 @@
+@import "_variables.base";
+@import "_mixins";
+
+
+@import "vendor/_normalize";
+
+
+@import "_utils";
+@import "_base";
+
+
+@import "_blocks/container";
+@import "_blocks/footer";
+@import "_blocks/header";
+@import "_blocks/sign_in";
+@import "_blocks/register";
+@import "_blocks/send_message";
+@import "_blocks/editing_password";
+@import "_blocks/editing_data";
+
+// INDEX \\
+
+.head_flex {
+    display: flex;
+
+    @media screen and (max-width: 580px) {
+       flex-direction: column;
+    }
+
+    &__element-AA {
+        line-height: 57px;
+        max-width: 280px;
+        font-size: 47px;
+    }
+
+    &__element-B {
+        margin-left: 40px;
+        margin-top: 96px;
+        line-height: 22px;
+        font-weight: 400;
+        max-width: 226px;
+        font-size: 18px;
+
+        @media screen and (max-width: 580px) {
+            margin-top: 0;
+            margin-left: 0;
+        }
+    }
+}
+
+.slider-container {
+    max-width: 1000px;
+}
+
+.slider {
+  &__wrapper {
+    height: 465px;
+    overflow: hidden;
+  }
+  
+  &__inner_wrapper {
+    height: 100%;
+    display: flex;
+  }
+  
+  &__slide {
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+  }
+
+  &__img {
+    @media screen and (max-width: 1400px) {
+        display: none;
+    }
+  }
+
+  &__img-mobile {
+    display: none;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media screen and (max-width: 1400px) {
+        display: block;
+    }
+  }
+
+  &__button {
+    width: 45px;
+    height: 45px;
+    margin-top: 30px;
+    background-color: transparent;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  &__bottom-panel {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+} 
+
+.swiper {
+    max-width: 1000px;
+    max-height: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: transparent
+}
+
+.swiper-wrapper {
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+}
+
+.swiper-button-section {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    bottom: 525px;
+}
+
+.swiper-button {
+    background-color: transparent;
+    border: none;
+}
+
+.AM_section {
+    background: #F6F6F6;
+    padding-bottom: 97px;
+    padding-top: 30px;
+    margin-top: 60px;
+
+    &__message-A {
+        position: absolute;
+        top: -15px;
+        left: -15px;
+
+        @media screen and (max-width: 700px) {
+            display: none;
+        }
+    }
+
+    &__message-B {
+        position: absolute;
+        top: -15px;
+        left: -15px;
+
+        @media screen and (max-width: 700px) {
+            display: none;
+        }
+    }
+
+    &__message-C {
+        position: absolute;
+        top: -15px;
+        left: -15px;
+
+        @media screen and (max-width: 700px) {
+            display: none;
+        }
+    }
+
+    &__mobile {
+        display: none;
+
+        @media screen and (max-width: 700px) {
+            display: block;
+        }
+    }
+
+    &__head {
+        text-align: center;
+        font-size: 34px;
+        margin-bottom: 66px;
+    }
+
+    &__text-A {
+        position: relative;
+        max-width: 448px;
+        font-size: 18px;
+        line-height: 22px;
+        margin-bottom: 70px;
+        margin-left: 286px;
+
+        @media screen and (max-width: 900px) {
+            margin-left: 95px;
+        }
+
+        @media screen and (max-width: 700px) {
+            max-width: 248px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    } 
+
+    &__text-B {
+        position: relative;
+        max-width: 448px;
+        font-size: 18px;
+        line-height: 22px;
+        margin-bottom: 70px;
+        margin-left: 386px;
+
+        @media screen and (max-width: 900px) {
+            margin-left: 195px;
+        }
+
+        @media screen and (max-width: 700px) {
+            max-width: 248px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    } 
+
+    &__text-C {
+        position: relative;
+        max-width: 448px;
+        font-size: 18px;
+        line-height: 22px;
+        margin-left: 286px;
+
+        @media screen and (max-width: 900px) {
+            margin-left: 95px;
+        }
+
+        @media screen and (max-width: 700px) {
+            max-width: 248px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}
+
+.skills_section {
+    text-align: center;
+        
+    @media screen and (max-width: 450px) {
+        text-align: left;
+    }
+
+    &__head {
+        font-size: 34px;
+        margin-bottom: 20px;
+    }
+
+    &__text_A {
+        font-size: 18px;
+    }
+
+    &__flex {
+        display: flex;
+        justify-content: space-between;
+        list-style-type: none;
+        flex-wrap: wrap;
+        
+        @media screen and (max-width: 450px) {
+            padding-inline-start: 0;
+        }
+    }
+
+    &__indicator {
+        display: flex;
+    }
+
+    &__indicator-img {
+        margin-left: 12px;
+        margin-top: 22px;
+        max-height: 9px;
+
+        @media screen and (max-width: 450px) {
+            display: none;
+        }
+    }
+
+    &__indicator-mobile {
+        margin-left: 12px;
+        margin-top: 22px;
+        max-height: 9px;
+        display: none;
+
+        @media screen and (max-width: 450px) {
+            display: block;
+        }
+    }
+}
+
+.partfolio {
+    width: 100%;
+    padding-top: 30px;
+    background: #F6F6F6;
+
+    &__head {
+        text-align: center;
+        font-size: 34px;
+        margin-bottom: 50px;
+    }
+
+    &__swiper{
+        display: flex;
+    }
+
+    &__swiper-button {
+        cursor: pointer;
+        border: none;
+        background-color: transparent;
+    }
+
+    &__swiper-button-one {
+        position: relative;
+        left: 60px;
+    }
+
+    &__swiper-button-two {
+        position: relative;
+        left: -60px;
+    }
+
+    &__description {
+        position: relative;
+        padding-top: 31px;
+        padding-bottom: 31px;
+        text-align: center;
+        background-color: #070707D9;
+        opacity: 0.85;
+        bottom: 180px;
+    }
+
+    &__description-head {
+        text-align: center;
+        font-size: 18px;
+        color: white;
+    }
+
+    &__description-text {
+        position: relative;
+        text-align: center;
+        font-size: 14px;
+        max-width: 400px;
+        color: white;
+        margin-left: 400px;
+    }
+}
+
+// My profile 
+
+.header_MP {
+    margin-top: 33px;
+}
+
+.MP_head {
+    font-size: 47px;
+    font-weight: 700;
+    margin-left: 20px;
+    
+    @media screen and (max-width: 699px) {
+        max-width: 205px;
+    }
+}
+
+.MP_section {
+    display: flex;
+
+    @media screen and (max-width: 699px) {
+        flex-direction: column;
+    }
+}
+
+.user_data {
+    &__element {
+        display: flex;
+    }
+
+    &__element_text {
+        margin-left: 105px;
+        margin-right: 15px;
+
+        @media screen and (max-width: 768px) {
+            margin-left: 76px;
+        }
+
+        @media screen and (max-width: 700px) {
+            margin-left: 20px;
+        }
+    }
+}
+
+.MP_button_list {
+    display: flex;
+    flex-direction: column;
+    margin-left: 105px;
+
+    @media screen and (max-width: 768px) {
+        margin-left: 76px;
+    }
+    
+    @media screen and (max-width: 700px) {
+        margin-left: 20px;
+    }
+
+    &__element {
+        cursor: pointer;
+        background-color: transparent;
+        font-size: 18px;
+        border-radius: 30px;
+        padding: 6px 15px 6px 15px;
+        color: #070707;
+        border-color: 3px solid #070707;
+    }
+
+    &__element-A {
+        max-width: 180px;
+    }
+
+    &__element-B {
+        margin-top: 20px;
+        max-width: 195px;
+        margin-bottom: 20px;
+    }
+
+    &__element-C {
+        max-width: 160px;
+    }
+}
+
+// my blog \\
+
+.header_blog {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.form_section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.checkbox_section {
+    flex-direction: column;
+
+    &__text {
+        font-size: 14px;
+        margin-left: 0;
+        margin-top: 0;
+    }
+}
+
+.select_of_box_js {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 0;
+    max-width: 80px;
+}
+
+.form_group {
+    margin-left: 5px;
+}
+
+.views_section {
+    &__text {
+        font-size: 14px;
+    }
+
+    &__flex_element {
+        display: flex;
+    }
+}
+
+.comments_section {
+
+    &__text {
+        font-size: 14px;
+    }
+
+    &__flex_element {
+        display: flex;
+    }
+}
+
+.HS_section {
+    
+    &__text {
+        font-size: 14px;
+    }
+
+    &__flex_element {
+        display: flex;
+    }
+}
+
+.SR_section {
+    
+    &__text {
+        font-size: 14px;
+    }
+    
+    &__flex_element {
+        display: flex;
+    }
+}
+
+.main_form_button {
+    margin-left: 10px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    border-radius: 30px;
+    padding: 6px 15px 6px 15px;
+    color: #070707;
+    cursor: pointer;
+    border: 2.5px solid #070707
+}
+
+.search_section {
+    display: flex;
+    &__input {
+        width: 100%;
+        padding: 15px 15px 15px 14px;
+        border-radius: 0px;
+        border: 2px solid #E5E5E5;
+        margin-left: 30px;
+    }
+
+    &__button {
+        padding-top: 10px;
+        margin-left: 10px;
+        margin-bottom: 20px;
+        font-size: 18px;
+        border-radius: 30px;
+        padding: 6px 15px 6px 15px;
+        color: #070707;
+        cursor: pointer;
+        border: 2.5px solid #070707;
+        background-color: transparent;
+    }
+}
+
+.text_left {
+    margin-left: 12px;
+}
+
+// modal windows \\
+
+
+.form_successfully {
+    display: flex;
+
+    &__text {
+        color: #03BC3C;
+        max-width: 219px;
+        font-size: 24px;
+    }
+}
+
+.form_unsuccessfully {
+    display: flex;
+
+    &__text {
+        color: #EB3617;
+        max-width: 475px;
+        font-size: 24px;
+    }
+}
